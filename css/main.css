@@ -94,6 +94,7 @@ nav {
 }
 #msgs {
  font-weight:bold;
+ padding-right: 130px;
 }
 #clock{
  float:right;
