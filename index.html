@@ -111,7 +111,7 @@ window.applicationCache.onupdateready=function(e){
     selectedTheme:localStorage.getItem("theme"),
     payloads:[
      {name:"Load Exploit",icon:"hen.png",detail:"لازمه اجرای پیلودها ، فراهم نمودن بستری بمنظور اجرای پیلودها و جیلبریک کنسول"},
-     {name:"Load Mira",icon:"hen.png",detail:"بارگزاری میرا به تنهایی : فعالسازی قابلیت امکان اجرای نرم افزارها و بازیهای fpkg ، برای بارگزاری میرا ابتدا پیلود Load Exploit را ارسال کنید ( پیش نیاز )"},
+     {name:"Load Mira",icon:"hen.png",detail:"بارگزاری میرا  : فعالسازی قابلیت امکان اجرای نرم افزارها و بازیهای fpkg"},
      {name:"E+M+RPlay",icon:"hen.png",detail:"بارگزاری اکسپلویت Load Exploit و mira بطور همزمان : امکان اجرای نرم افزارها و بازیهای fpkg + فعالسازی قابلیت Remote Play بمنظور دریافت تصویر کنسول در کامپیوتر ، دستگاه اندرویدی و ..."},
      {name:"Bin Loader",icon:"binloader.png",detail:"لودر فایل Bin از طریق پورت 9020"},
      {name:"FTP",icon:"ftp.png",detail:"ایجاد بستر ارتباطی لازم جهت اتصال کامپیوتر و کنسول ps4 شما توسط ftp بمنظور مدیریت فایلها"},
@@ -159,9 +159,10 @@ window.applicationCache.onupdateready=function(e){
      if(key==1){//load mira
       msgs.innerHTML="<div>Loading Mira ...</div>";
       LoadedMSG="Mira Loaded ✔";
+      setTimeout(jailbreak,500);
       var script = document.createElement('script');script.src = "p/pl_mira.js";document.getElementsByTagName('head')[0].appendChild(script);
       var script = document.createElement('script');script.src = "p/exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
-     setTimeout(jailbreak,500);
+     
      }
      if(key==2){//load Exploit+Mira+RemotePlay
       msgs.innerHTML="<div>Loading Exploit+Mira+RemotePlay ...</div>";
