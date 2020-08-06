@@ -42257,13 +42257,13 @@ var _ = malloc_nogc.pop();
 var _ = malloc_nogc.pop();
 var _ = malloc_nogc.pop();
 if (main_ret == 179 || main_ret == 0) {
-window.msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Exploit Loaded ✔</h1>";
+  LoadedMSG=="Exploit Loaded ✔";
 
 if (ExploitMira != null){
-  window.msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Exploit Loaded ✔ Now Loading Mira ...</h1>";
+  LoadedMSG=="Exploit Loaded ✔ Now Loading Mira ...";
     setTimeout(function(){
     var script = document.createElement('script');script.src = MiraSRC;document.getElementsByTagName('head')[0].appendChild(script);
-    var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+    var script = document.createElement('script');script.src = "p/exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
     },1000);
   }
 } 
