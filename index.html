@@ -156,20 +156,15 @@ window.applicationCache.onupdateready=function(e){
       msgs.innerHTML="<div>Loading Exploit ...</div>";
       setTimeout(jailbreak,500);
      }
-     if(key==1){//load mira
-      msgs.innerHTML="<div>Loading Mira ...</div>";
-      LoadedMSG="Mira Loaded ✔";
+     if(key==1){//load mira+exploit
+      msgs.innerHTML="<div>Loading Mira+Exploit ...</div>";
+      LoadedMSG="Exploit + Mira Loaded ✔";ExploitMira="yes";MiraSRC="p/pl_mira.js";
       setTimeout(jailbreak,500);
-      var script = document.createElement('script');script.src = "p/pl_mira.js";document.getElementsByTagName('head')[0].appendChild(script);
-      var script = document.createElement('script');script.src = "p/exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
-     
      }
      if(key==2){//load Exploit+Mira+RemotePlay
       msgs.innerHTML="<div>Loading Exploit+Mira+RemotePlay ...</div>";
-      LoadedMSG="Exploit + Mira + REMOTPLAY Loaded ✔";ExploitMiraRemotePlay="yes";
+      LoadedMSG="Exploit + Mira + REMOTPLAY Loaded ✔";ExploitMira="yes";MiraSRC="p/pl_remoteplay.js";
       setTimeout(jailbreak,500);
-      var script = document.createElement('script');script.src = "p/pl_remoteplay.js";document.getElementsByTagName('head')[0].appendChild(script);
-      var script = document.createElement('script');script.src = "p/exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
      }
      if(key==3){//load binloader
       msgs.innerHTML="<div>Loading Bin Loader ...</div>";
