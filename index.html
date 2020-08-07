@@ -279,7 +279,7 @@ window.applicationCache.onupdateready=function(e){
      localStorage.setItem("theme",(key))
      this.selectedTheme=localStorage.getItem("theme")
      this.themes[this.selectedTheme].selected=true
-     document.getElementById("body").style.background="url(img/"+this.themes[localStorage.getItem("theme")].url;
+     document.getElementById("body").style.background="url(img/"+this.themes[localStorage.getItem("theme")].url+")";
      document.getElementById("body").style.backgroundRepeat="no-repeat";
      document.getElementById("body").style.backgroundSize="115%";
     },
@@ -303,10 +303,10 @@ window.applicationCache.onupdateready=function(e){
  <script type="text/javascript">
 
 
-  document.getElementById("body").style.background="url(img/"+app.themes[localStorage.getItem("theme")].url;
+  document.getElementById("body").style.background="url(img/"+app.themes[localStorage.getItem("theme")].url+")";
   document.getElementById("body").style.backgroundRepeat="no-repeat";
   document.getElementById("body").style.backgroundSize="115%";
-  document.getElementById("body").style.background="url(img/img0.jpg)";
+
  </script>
  <script type="text/javascript">
   function showdate() {
